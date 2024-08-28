@@ -1,11 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <hr>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Revou Software Engineering</title>
+    <link rel="stylesheet" href="css\stlye.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav id="navbar-top">
+      <header class="logo">
+        <div class="logo-item"></div>
+      </header>
+
+      <ul class="nav-container">
+        <li><a href="#" class="nav-item">Home</a></li>
+        <li><a href="#" class="nav-item">Our Profile</a></li>
+        <li><a href="#" class="nav-item">Achievement</a></li>
+        <li><a href="#" class="nav-item">Message Us</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <header>
+        <h1>Hi <span id="name"></span>, Welcome To Website School</h1>
+        <p>
+          Website School adalah sebuah platform digital yang dibuat khusus untuk
+          sekolah. Fungsinya sebagai media informasi, komunikasi, dan interaksi
+          antara sekolah, siswa, guru, orang tua, dan masyarakat umum.
+        </p>
+        <div class="banner-img">
+          <img src="https://picsum.photos/2000" alt="" />
+        </div>
+      </header>
+      <section id="our-profile">
+        <header>
+          <h1>Our Profile</h1>
+        </header>
+        <section class="profile-container">
+          <div class="profile-item">
+            <div class="profile-img"></div>
+            <h2>Professional Teacher</h2>
+          </div>
+          <div class="profile-item">
+            <div class="profile-img"></div>
+            <h2>Sport Field</h2>
+          </div>
+          <div class="profile-item">
+            <div class="profile-img"></div>
+            <h2>Classroom</h2>
+          </div>
+          <div class="profile-item">
+            <div class="profile-img"></div>
+            <h2>Professional Teacher</h2>
+          </div>
+          <div class="profile-item">
+            <div class="profile-img"></div>
+            <h2>Sport Field</h2>
+          </div>
+        </section>
+      </section>
+      <section id="achievement">
+        <header>
+          <h1>Achievement</h1>
+        </header>
+        <div class="profile-achievement">
+          <img src="https://picsum.photos/200" alt="" />
+          <h2>Meraih Penghargaan Sekolah Tersantai Tingkat Nasional</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, nihil
+            ducimus? Voluptatum maxime ducimus esse!
+          </p>
+        </div>
+        <div class="profile-achievement">
+          <img src="https://picsum.photos/200" alt="" />
+          <h2>Meraih Penghargaan Sekolah Terkece Tingkat Nasional</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, nihil
+            ducimus? Voluptatum maxime ducimus esse!
+          </p>
+        </div>
+      </section>
+      <section id="message">
+        <header>
+          <h1>Message Us</h1>
+        </header>
+        <div class="form-container">
+          <div class="form">
+            <form name="message-form" onsubmit="return validateform()">
+              Nama: <input placeholder="Nama" type="text" name="nama" /><br />
+              Tanggal Lahir :
+              <input type="date" name="tanggal-lahir" /><br />
+              Jenis Kelamin: <br />
+              <input
+                type="radio"
+                id="laki-laki"
+                name="jenis-kelamin"
+                value="laki-laki"
+              />
+              <label for="laki-laki">Laki-laki</label>
+              <input
+                type="radio"
+                id="peremuan"
+                name="jenis-kelamin"
+                value="perempuan"
+              />
+              <label for="perempuan">Perempuan</label><br />
+              Pesan:
+              <textarea placeholder="Pesan anda" name="pesan"></textarea><br />
+              <input type="submit" value="submit" />
+            </form>
+          </div>
+          <div class="output-form">
+            <p>Nama: <span id="sender-nama"></span></p>
+            <p>Tanggal Lahir: <span id="sender-tanggal-lahir"></span></p>
+            <p>Jenis Kelamin: <span id="sender-jenis-kelamin"></span></p>
+            <p>Pesan: <span id="sender-pesan"></span></p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <hr />
+    <footer>
+      <div class="footer-bottom">
+        <p>&copy; 2024 website School. All Rights Reserved.</p>
+        <p class="made-by">Made by JRKR</p>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
 </html>
